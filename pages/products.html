@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+<link
+href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Products</title>
+
+    <link rel="stylesheet"
+          href="../style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <nav>
+
+            <a href="../index.html">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                Dashboard
+
+            </a>
+
+            <a href="products.html" class="active">
+
+                <i class="fa-solid fa-shirt"></i>
+
+                Products
+
+            </a>
+
+            <a href="suppliers.html">
+
+                <i class="fa-solid fa-truck"></i>
+
+                Suppliers
+
+            </a>
+
+            <a href="content.html">
+
+                <i class="fa-solid fa-camera"></i>
+
+                Content
+
+            </a>
+
+            <a href="finance.html">
+
+                <i class="fa-solid fa-pound-sign"></i>
+
+                Finance
+
+            </a>
+
+            <a href="settings.html">
+
+                <i class="fa-solid fa-gear"></i>
+
+                Settings
+
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <main class="main-content">
+<div class="topbar">
+
+    <div>
+
+        <h2>Metic Hub</h2>
+
+        <p>
+            Quiet Souls. Loud Visions.
+        </p>
+
+    </div>
+
+    <div class="user-profile">
+
+        MA
+
+    </div>
+
+</div>
+        <div class="page-container">
+
+<div class="page-container">
+
+    <div class="page-header">
+
+        <h1>Products</h1>
+
+        <button id="addProductBtn">           
+
+            + Add Product
+
+        </button>
+
+        <button onclick="exportProducts()">
+
+    Export CSV
+
+</button>
+    </div>
+<input
+type="text"
+id="searchInput"
+class="search-bar"
+placeholder="Search products...">
+    <div id="productGrid"></div>
+<div class="modal" id="productModal">
+
+    <div class="modal-content">
+
+        <h2>Add Product</h2>
+
+        <input
+            type="text"
+            id="productName"
+            placeholder="Product Name">
+
+        <input
+            type="text"
+            id="productCost"
+            placeholder="Cost (£)">
+
+        <input
+            type="text"
+            id="productPrice"
+            placeholder="Selling Price (£)">
+            <input
+type="text"
+id="productImage"
+placeholder="Image URL">
+
+        <select id="productStatus">
+
+            <option>
+                In Design
+            </option>
+
+            <option>
+                Testing
+            </option>
+
+            <option>
+                Ready
+            </option>
+
+        </select>
+
+        <button onclick="addProduct()">
+
+            Save Product
+
+        </button>
+
+    </div>
+
+    </div>
+
+</div>
+
+<script src="product.js"></script>
+
+</body>
+
+</html>

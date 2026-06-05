@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+<link
+href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Finance</title>
+
+    <link rel="stylesheet"
+          href="../style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <nav>
+
+            <a href="../index.html">
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                Dashboard
+
+            </a>
+
+            <a href="products.html" class="active">
+
+                <i class="fa-solid fa-shirt"></i>
+
+                Products
+
+            </a>
+
+            <a href="suppliers.html">
+
+                <i class="fa-solid fa-truck"></i>
+
+                Suppliers
+
+            </a>
+
+            <a href="content.html">
+
+                <i class="fa-solid fa-camera"></i>
+
+                Content
+
+            </a>
+
+            <a href="finance.html">
+
+                <i class="fa-solid fa-pound-sign"></i>
+
+                Finance
+
+            </a>
+
+            <a href="settings.html">
+
+                <i class="fa-solid fa-gear"></i>
+
+                Settings
+
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <main class="main-content">
+<div class="topbar">
+
+    <div>
+
+        <h2>Metic Hub</h2>
+
+        <p>
+            Quiet Souls. Loud Visions.
+        </p>
+
+    </div>
+
+    <div class="user-profile">
+
+        MA
+
+    </div>
+
+</div>
+        <div class="page-container">
+
+<div class="page-container">
+
+    <div class="page-header">
+
+        <h1>Finance</h1>
+
+    </div>
+
+    <div class="finance-grid">
+
+        <div class="finance-card">
+
+            <h3>Revenue</h3>
+
+            <span id="revenue">
+                £0
+            </span>
+
+        </div>
+
+        <div class="finance-card">
+
+            <h3>Expenses</h3>
+
+            <span id="expenses">
+                £0
+            </span>
+
+        </div>
+
+        <div class="finance-card">
+
+            <h3>Profit</h3>
+
+            <span id="profit">
+                £0
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="calculator-card">
+
+    <h2>
+        Pricing Engine
+    </h2>
+
+    <input
+    type="number"
+    id="costInput"
+    placeholder="Cost per unit (£)">
+
+    <input
+    type="number"
+    id="quantityInput"
+    placeholder="Quantity">
+
+    <input
+    type="number"
+    id="marginInput"
+    placeholder="Desired Margin %">
+
+    <input
+    type="number"
+    id="shippingInput"
+    placeholder="Shipping Cost (£)">
+
+    <button
+    onclick="calculatePricing()">
+
+        Calculate
+
+    </button>
+
+    <div id="pricingResults">
+
+    </div>
+
+</div>
+
+<script src="finance.js"></script>
+
+</body>
+
+</html>

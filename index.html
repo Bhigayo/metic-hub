@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link
+href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Metic Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <aside class="sidebar">
+
+           <nav>
+
+<a href="#" class="active">
+
+<i class="fa-solid fa-chart-line"></i>
+
+Dashboard
+
+</a>
+
+<a href="pages/products.html">
+
+<i class="fa-solid fa-shirt"></i>
+
+Products
+
+</a>
+
+<a href="pages/suppliers.html">
+
+<i class="fa-solid fa-truck"></i>
+
+Suppliers
+
+</a>
+
+<a href="pages/content.html">
+
+<i class="fa-solid fa-camera"></i>
+
+Content
+
+</a>
+
+<a href="pages/finance.html">
+
+<i class="fa-solid fa-pound-sign"></i>
+
+Finance
+
+</a>
+
+<a href="pages/settings.html">
+
+<i class="fa-solid fa-gear"></i>
+
+Settings
+
+</a>
+
+</nav>
+
+        </aside>
+
+        <main class="main-content">
+<div class="topbar">
+
+    <div>
+
+        <h2>Metic Hub</h2>
+
+        <p>
+            Quiet Souls. Loud Visions.
+        </p>
+
+    </div>
+
+    <div class="user-profile">
+
+        MA
+
+    </div>
+
+</div>
+            <header class="hero">
+
+    <div>
+
+        <h1 id="dashboardGreeting">
+
+Build Something Worth Wearing
+
+</h1>
+
+        <p>
+            Manage every part of Metic
+from one operating system.
+        </p>
+
+    </div>
+
+    <button class="hero-btn">
+
+        + New Product
+
+    </button>
+
+</header>
+<div class="chart-card">
+
+    <canvas id="profitChart"></canvas>
+
+</div>
+
+
+<div class="analytics-grid">
+
+    <div class="analytics-card">
+
+        <h3>
+            Top Product
+        </h3>
+
+        <span id="topProduct">
+
+            -
+
+        </span>
+
+    </div>
+
+    <div class="analytics-card">
+
+        <h3>
+            Average Profit
+        </h3>
+
+        <span id="avgProfit">
+
+            £0
+
+        </span>
+
+    </div>
+
+    <div class="analytics-card">
+
+        <h3>
+            Total Inventory Value
+        </h3>
+
+        <span id="inventoryValue">
+
+            £0
+
+        </span>
+
+    </div>
+
+</div>
+            <section class="stats">
+
+    <div class="card">
+
+        <h3>Products</h3>
+
+        <span id="productCount">
+            0
+        </span>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Suppliers</h3>
+
+        <span id="supplierCount">
+            0
+        </span>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Revenue</h3>
+
+        <span id="revenueCount">
+            £0
+        </span>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Profit</h3>
+
+        <span id="profitCount">
+            £0
+        </span>
+
+    </div>
+
+</section>
+<section class="assistant-card">
+
+    <h2>
+        🤖 Metic Assistant
+    </h2>
+
+    <p id="assistantMessage">
+
+        Loading insights...
+
+    </p>
+
+</section>
+                <div class="card">
+
+    <h3>Profit</h3>
+
+    <span id="profitCount">
+
+        £0
+
+    </span>
+
+
+                </div>
+
+            </section>
+
+            <section class="activity">
+
+    <h2>
+
+        Quick Actions
+
+    </h2>
+
+    <div class="activity-card">
+
+        <a href="pages/products.html">
+
+            ➕ Add Product
+
+        </a>
+
+    </div>
+
+    <div class="activity-card">
+
+        <a href="pages/suppliers.html">
+
+            🚚 Manage Suppliers
+
+        </a>
+
+    </div>
+
+    <div class="activity-card">
+
+        <a href="pages/content.html">
+
+            📸 Plan Content
+
+        </a>
+
+    </div>
+
+</section>
+
+<section class="brand-summary">
+
+    <div class="summary-card">
+
+        <h3>
+            Brand Status
+        </h3>
+
+        <p>
+            Building Phase 🚀
+        </p>
+
+    </div>
+
+    <div class="summary-card">
+
+        <h3>
+            Main Supplier
+        </h3>
+
+        <p>
+            Tapstitch
+        </p>
+
+    </div>
+
+    <div class="summary-card">
+
+        <h3>
+            Focus
+        </h3>
+
+        <p>
+            First Test Drop
+        </p>
+
+    </div>
+
+</section>
+
+        </main>
+
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
